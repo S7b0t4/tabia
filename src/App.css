@@ -11,11 +11,16 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+  padding-bottom: 10px;
 }
 
 .project-image {
   width: 100%;
   height: auto;
+}
+
+.img_link{
+  max-width: 5%;
 }
 
 .project-details {

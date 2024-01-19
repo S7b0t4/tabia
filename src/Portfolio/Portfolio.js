@@ -4,6 +4,9 @@ import realEstate from "../Upload/real-estate.jpeg"
 import restoran from "../Upload/restoran.jpeg"
 import stepUp from "../Upload/stepUp.jpg"
 
+import telegram from "../img/telegram.png"
+import github from "../img/github.png"
+
 const ProjectCard = ({ title, description, imageUrl, projectLink }) => {
   return (
     <div className="project-card">
@@ -30,6 +33,9 @@ const DeveloperInfo = () => {
       <p>
         Мои навыки включают в себя работу с HTML5, CSS3, JavaScript, Redux, Git, Github, Figma, Инструментов Google, а также использование фреймворка React. Я стремлюсь к постоянному обучению и следованию лучшим практикам разработки.
       </p>
+      <div>
+        <a href={"https://github.com/S7b0t4"}><img className='img_link' src={github} alt="" /></a>
+      </div>
     </div>
   );
 };
