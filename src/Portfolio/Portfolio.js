@@ -4,7 +4,10 @@ import realEstate from "../Upload/real-estate.jpeg"
 import restoran from "../Upload/restoran.jpeg"
 import stepUp from "../Upload/stepUp.jpg"
 
+import copy from 'clipboard-copy';
+
 import telegram from "../img/telegram.png"
+import main from "../img/main.png"
 import github from "../img/github.png"
 
 const ProjectCard = ({ title, description, imageUrl, projectLink }) => {
@@ -21,6 +24,10 @@ const ProjectCard = ({ title, description, imageUrl, projectLink }) => {
     </div>
   );
 };
+const handleImageClick = (text) => {
+  copy(text);f
+};
+
 
 
 const DeveloperInfo = () => {
@@ -33,8 +40,25 @@ const DeveloperInfo = () => {
       <p>
         Мои навыки включают в себя работу с HTML5, CSS3, JavaScript, Redux, Git, Github, Figma, Инструментов Google, а также использование фреймворка React. Я стремлюсь к постоянному обучению и следованию лучшим практикам разработки.
       </p>
-      <div>
-        <a href={"https://github.com/S7b0t4"}><img className='img_link' src={github} alt="" /></a>
+      <div className='row_gap'>
+        <a href={"https://github.com/S7b0t4"}><img
+          className='img_link' 
+          src={github} 
+          /></a>
+        <a><img
+          className='img_link' 
+          src={telegram}
+          alt=""
+          onClick={() => {handleImageClick("@S7b0t4")}}
+          style={{ cursor: 'pointer' }}
+          /></a>
+        <a><img
+          className='img_link' 
+          src={main} 
+          alt=""
+          onClick={() => {handleImageClick("toni.paun.00@mail.ru")}}
+          style={{ cursor: 'pointer' }}
+          /></a>
       </div>
     </div>
   );
