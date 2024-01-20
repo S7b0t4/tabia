@@ -45,21 +45,22 @@ const DeveloperInfo = () => {
           className='img_link' 
           src={github}
           alt="github"
-          /></a>
-        <a><img
+          />
+        </a>
+        <img
           className='img_link' 
           src={telegram}
           alt="telegram"
           onClick={() => {handleImageClick("@S7b0t4")}}
           style={{ cursor: 'pointer' }}
-          /></a>
-        <a><img
+        />
+        <img
           className='img_link' 
           src={main} 
           alt="mail"
           onClick={() => {handleImageClick("toni.paun.00@mail.ru")}}
           style={{ cursor: 'pointer' }}
-          /></a>
+        />
       </div>
     </div>
   );
