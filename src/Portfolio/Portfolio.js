@@ -25,7 +25,7 @@ const ProjectCard = ({ title, description, imageUrl, projectLink }) => {
   );
 };
 const handleImageClick = (text) => {
-  copy(text);f
+  copy(text);
 };
 
 
