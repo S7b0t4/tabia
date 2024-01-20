@@ -43,19 +43,20 @@ const DeveloperInfo = () => {
       <div className='row_gap'>
         <a href={"https://github.com/S7b0t4"}><img
           className='img_link' 
-          src={github} 
+          src={github}
+          alt="github"
           /></a>
         <a><img
           className='img_link' 
           src={telegram}
-          alt=""
+          alt="telegram"
           onClick={() => {handleImageClick("@S7b0t4")}}
           style={{ cursor: 'pointer' }}
           /></a>
         <a><img
           className='img_link' 
           src={main} 
-          alt=""
+          alt="mail"
           onClick={() => {handleImageClick("toni.paun.00@mail.ru")}}
           style={{ cursor: 'pointer' }}
           /></a>
