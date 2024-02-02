@@ -5,13 +5,50 @@
   border-radius: 8px;
   overflow: hidden;
   margin-bottom: 20px;
+  animation-duration: 1s;
+}
+.cool_text{
+  font-family: 'Pacifico', cursive;
+  animation-duration: 2s;
+}
+.border{
+  background: orange;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-radius: 20px;
+  margin: 10px;
+  margin-bottom: 60px;
+}
+.portfolio{
+  animation-duration: 1s;
+}
+.avatar_block{
+  animation-duration: 1s;
+  position: relative;
+  top: 75px;
+  background: rgb(255, 255, 255);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+}
+.text_info{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.avatar{
+  max-width: 100px;
 }
 
-.developer-info{
+.developer_info{
   text-align: center;
   display: flex;
   flex-direction: column;
   padding-bottom: 10px;
+  gap: 10px;
 }
 .project-image {
   width: 100%;

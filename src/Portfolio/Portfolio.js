@@ -4,15 +4,19 @@ import realEstate from "../Upload/real-estate.jpeg"
 import restoran from "../Upload/restoran.jpeg"
 import stepUp from "../Upload/stepUp.jpg"
 
+import Avatar from "../Upload/avatar.svg"
+
 import copy from 'clipboard-copy';
 
 import telegram from "../img/telegram.png"
 import main from "../img/main.png"
 import github from "../img/github.png"
 
+import 'animate.css';
+
 const ProjectCard = ({ title, description, imageUrl, projectLink }) => {
   return (
-    <div className="project-card">
+    <div className="project-card animate__fadeInUp">
       <img src={imageUrl} alt={title} className="project-image" />
       <div className="project-details">
         <h3 className="project-title">{title}</h3>
@@ -32,14 +36,27 @@ const handleImageClick = (text) => {
 
 const DeveloperInfo = () => {
   return (
-    <div className="developer-info">
-      <h2>Привет, меня зовут Антон Паун</h2>
-      <p>
-        Я — начина́ющий веб-разработчик с фокусом на создание современных и креативных веб-сайтов. Мое портфолио представляет разнообразные проекты, отвечающие самым актуальным требованиям в области веб-технологий.
-      </p>
-      <p>
-        Мои навыки включают в себя работу с HTML5, CSS3, JavaScript, Redux, Git, Github, Figma, Инструментов Google, а также использование фреймворка React. Я стремлюсь к постоянному обучению и следованию лучшим практикам разработки.
-      </p>
+    <div className="developer_info">
+      <div className='border'>
+        <div className='avatar_block animate__backInDown'>
+          <img src={Avatar} alt="Avatar" className='avatar'/>
+        </div>
+      </div>
+      <div className='text_info'>
+        <div className='cool_text animate__pulse'>Привет, меня зовут S7b0t4</div>
+        <div>
+          Web - developer
+        </div>
+        <div>
+          Entry level (Начального уровня)
+        </div>
+        <div>
+          Владею - Стеком MERN и всём что близко к пониманию
+        </div>
+        <div>
+          Вы можете попросить или заказать у меня сайт Простого/Среднего уровня по ссылкам
+        </div>
+      </div>
       <div className='row_gap'>
         <a href={"https://github.com/S7b0t4"}><img
           className='img_link' 
@@ -47,20 +64,21 @@ const DeveloperInfo = () => {
           alt="github"
           />
         </a>
+        <a href="https://t.me/S7b0t4">
+          <img
+            className='img_link' 
+            src={telegram}
+            alt="telegram"
+            style={{ cursor: 'pointer' }}
+          />
+        </a>
         <img
-          className='img_link' 
-          src={telegram}
-          alt="telegram"
-          onClick={() => {handleImageClick("@S7b0t4")}}
-          style={{ cursor: 'pointer' }}
-        />
-        <img
-          className='img_link' 
-          src={main} 
-          alt="mail"
-          onClick={() => {handleImageClick("toni.paun.00@mail.ru")}}
-          style={{ cursor: 'pointer' }}
-        />
+            className='img_link' 
+            src={main} 
+            alt="mail"
+            onClick={() => {handleImageClick("toni.paun.00@mail.ru")}}
+            style={{ cursor: 'pointer' }}
+          />
       </div>
     </div>
   );
