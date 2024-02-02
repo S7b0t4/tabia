@@ -6,10 +6,7 @@ import stepUp from "../Upload/stepUp.jpg"
 
 import Avatar from "../Upload/avatar.svg"
 
-import copy from 'clipboard-copy';
-
 import telegram from "../img/telegram.png"
-import main from "../img/main.png"
 import github from "../img/github.png"
 
 import 'animate.css';
@@ -27,9 +24,6 @@ const ProjectCard = ({ title, description, imageUrl, projectLink }) => {
       </div>
     </div>
   );
-};
-const handleImageClick = (text) => {
-  copy(text);
 };
 
 
@@ -58,27 +52,21 @@ const DeveloperInfo = () => {
         </div>
       </div>
       <div className='row_gap'>
-        <a href={"https://github.com/S7b0t4"}><img
-          className='img_link' 
+        <a href={"https://github.com/S7b0t4"} className='img_link' >
+          <img
+          className='img' 
           src={github}
           alt="github"
           />
         </a>
-        <a href="https://t.me/S7b0t4">
+        <a href={"https://t.me/S7b0t4"} className='img_link' >
           <img
-            className='img_link' 
+            className='img' 
             src={telegram}
             alt="telegram"
             style={{ cursor: 'pointer' }}
           />
         </a>
-        <img
-            className='img_link' 
-            src={main} 
-            alt="mail"
-            onClick={() => {handleImageClick("toni.paun.00@mail.ru")}}
-            style={{ cursor: 'pointer' }}
-          />
       </div>
     </div>
   );

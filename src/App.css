@@ -23,6 +23,9 @@
 .portfolio{
   animation-duration: 1s;
 }
+.img{
+  max-width: 75px;
+}
 .avatar_block{
   animation-duration: 1s;
   position: relative;
@@ -56,7 +59,7 @@
 }
 
 .img_link{
-  max-width: 5%;
+  max-width: 100px;
 }
 
 .project-details {
