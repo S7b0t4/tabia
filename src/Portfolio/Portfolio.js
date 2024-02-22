@@ -11,16 +11,21 @@ import github from "../img/github.png"
 
 import 'animate.css';
 
-const ProjectCard = ({ title, description, imageUrl, projectLink }) => {
+const ProjectCard = ({ title, description, imageUrl, projectLink, projectLinkGit }) => {
   return (
     <div className="project-card animate__fadeInUp">
       <img src={imageUrl} alt={title} className="project-image" />
       <div className="project-details">
         <h3 className="project-title">{title}</h3>
         <p className="project-description">{description}</p>
-        <a href={projectLink} target="_blank" rel="noopener noreferrer" className="project-link">
-          Посмотреть проект
-        </a>
+        <div className='link_row'>
+          <a href={projectLink} target="_blank" rel="noopener noreferrer" className="project-link">
+            Посмотреть проект
+          </a>
+          <a href={projectLinkGit} target="_blank" rel="noopener noreferrer" className="project-link-git">
+            Посмотреть проект на github
+          </a>
+        </div>
       </div>
     </div>
   );
@@ -79,7 +84,7 @@ const Portfolio = () => {
 				description: 'Разработка веб-платформы для поиска и просмотра недвижимости. Интеграция с картами, фильтрация по параметрам и удобный интерфейс для пользователей.',
 				imageUrl: realEstate,
 				projectLinkGit: 'https://github.com/S7b0t4/real_estate',
-        projectLink:"#"
+        projectLink:"https://s7b0t4-real-estate.netlify.app"
 
 			},
 			{
@@ -87,7 +92,7 @@ const Portfolio = () => {
 				description: 'Разработка веб-сайта с простым меню для ресторана. Возможность просмотра блюд, их цен и основной информации. Пользователи могут сделать заказ онлайн.',
 				imageUrl: restoran,
 				projectLinkGit: 'https://github.com/S7b0t4/Restoran',
-        projectLink:"#"
+        projectLink:"https://s7b0t4-restoran.netlify.app/"
 			},
       {
 				title: 'Магазин по продаже обуви',
@@ -109,6 +114,7 @@ const Portfolio = () => {
           description={project.description}
           imageUrl={project.imageUrl}
           projectLink={project.projectLink}
+          projectLinkGit={project.projectLinkGit}
         />
       ))}
     </div>
