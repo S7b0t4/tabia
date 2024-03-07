@@ -166,6 +166,25 @@ nav{
   gap: 100px;
 }
 
+.work{
+  position: relative;
+  color: #fff;
+  padding-top: 100px;
+  padding-bottom: 90px;
+  overflow: hidden;
+
+  picture{
+    z-index: -1;
+    position: absolute;
+    max-height: 670px;
+    overflow: hidden;
+    top: 0;
+
+    img{
+      width: 100%;
+    }
+  }
+}
 .svg_img{
   fill: white;
   filter: invert(100%);
