@@ -152,6 +152,35 @@ nav{
 .circle_img{
   border-radius: 50%;
 }
+
+.circle_img{
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.circle_img:hover {
+  animation: jump 0.7s;
+}
+
 .gap-10{
   gap: 100px;
+}
+
+.svg_img{
+  fill: white;
+  filter: invert(100%);
+  padding: 10px;
+  max-width: 75px;
+}
+
+@keyframes jump {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(0.9);
+  }
 }
