@@ -1,0 +1,157 @@
+@import "bootstrap/scss/bootstrap";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web&family=Literata:opsz@7..72&display=swap');
+
+.font-literata{
+  font-family: 'Literata', serif;
+}
+
+body{
+  background: #f2f2f0;
+  font-family: 'Istok Web', sans-serif;
+}
+
+header{
+  background-color: #1C2628;
+  color: #fff;
+
+  img.logo{
+    width: 140px;
+  }
+}
+
+nav{
+  background-color: #232323;
+
+  a.nav-underline{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: var(--bs-navbar-nav-link-padding-x);
+    margin-right: var(--bs-navbar-nav-link-padding-x);
+    color: #F2C46E;
+    position: relative;
+    text-decoration: none;
+  }
+
+  a.nav-underline::after{
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #bdb098;
+    transition: width 0.5s;
+  }
+
+  a.nav-underline:hover::after,
+  a.nav-underline.active{
+    content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 2px;
+    background-color: #F2C46E;
+    transition: width 0.5s;
+  }
+}
+
+.small-text{
+  font-size: 0.8rem;
+}
+
+.first-screen{
+  position: relative;
+  color: #fff;
+  padding-top: 100px;
+  padding-bottom: 90px;
+  overflow: hidden;
+
+  picture{
+    z-index: -1;
+    position: absolute;
+    max-height: 670px;
+    overflow: hidden;
+    top: 0;
+
+    img{
+      width: 100%;
+    }
+  }
+
+  h1{
+    text-transform: unset;
+    padding-bottom: 45px;
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 1.2;
+  }
+
+  .main-info{
+    max-width: 880px;
+  }
+
+  .subtitle{
+    padding-top: 15px;
+    border-top: 2px solid #F2C46E;
+    font-size: 20px;
+  }
+}
+
+.button-gold{
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #cb935d;
+  -webkit-transition: all 0.3s ease-out 0s, color 0s;
+  transition: all 0.3s ease-out 0s, color 0s;
+  margin-bottom: 4px;
+  padding: clamp(0.75rem, 0.6923rem + 0.2564vw, 1rem) clamp(1.5rem, 1.3558rem + 0.641vw, 2.125rem);
+  font-size: clamp(16px, 0.9423rem + 0.2564vw, 20px);
+
+  box-shadow: 4px 4px 0px 0px Rgba(203,147,93, .8);
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+
+  &::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #cb935d;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    -webkit-transform: translate(4px, 4px);
+    transform: translate(4px, 4px);
+    z-index: -1;
+    -webkit-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+  }
+
+  &:hover{
+    background-color: #cb935d;
+    box-shadow: none;
+  }
+}
+
+#services{
+  padding: 70px 0;
+}
+#action{
+  background: #1C2628;
+  padding: 20px;
+}
+
+.text_yellow{
+  color: #cb935d;
+}
+.circle_img{
+  border-radius: 50%;
+}
+.gap-10{
+  gap: 100px;
+}
