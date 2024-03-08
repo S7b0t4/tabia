@@ -168,6 +168,7 @@ nav{
 }
 
 .work{
+  background-attachment: fixed;
   position: relative;
   color: #fff;
   padding-top: 100px;
@@ -222,6 +223,54 @@ nav{
     color: white;
     padding: 10px;
   }
+}
+
+.partners{
+  background-attachment: fixed;
+  position: relative;
+  color: #fff;
+  padding-top: 100px;
+  padding-bottom: 90px;
+  overflow: hidden;
+  button{
+    background: var(--secondYellow);
+    color: white;
+    padding: 10px;
+    border: 0;
+    border-radius: 0;
+  } 
+}
+
+.question_and_answer{
+  position: relative;
+  color: #000000;
+  padding-top: 100px;
+  padding-bottom: 90px;
+  overflow: hidden;
+  form{
+    button{
+      background: var(--secondYellow);
+      color: white;
+      padding: 10px;
+      border: 0;
+      border-radius: 0;
+    } 
+  }
+}
+
+.question{
+  position: relative;
+  color: #ffffff;
+  padding-top: 100px;
+  padding-bottom: 90px;
+  overflow: hidden;
+  button{
+    background: var(--secondYellow);
+    color: white;
+    padding: 10px;
+    border: 0;
+    border-radius: 0;
+  } 
 }
 
 @keyframes jump {
