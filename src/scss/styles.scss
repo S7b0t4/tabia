@@ -238,7 +238,10 @@ nav{
     padding: 10px;
     border: 0;
     border-radius: 0;
-  } 
+  }
+  .subtext{
+    max-width: 320px;
+  }
 }
 
 .question_and_answer{
@@ -261,8 +264,7 @@ nav{
 .question{
   position: relative;
   color: #ffffff;
-  padding-top: 100px;
-  padding-bottom: 90px;
+  padding: 100px 10px 90px;
   overflow: hidden;
   button{
     background: var(--secondYellow);
