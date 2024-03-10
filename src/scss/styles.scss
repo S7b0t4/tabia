@@ -16,6 +16,20 @@
   --black: #000000;
   --blue: rgb(46,45,87);
 }
+
+.form_title{
+  background: var(--gray);
+  padding: 10px;
+  border-bottom: 2px solid var(--yellow);
+}
+.form_block{
+  padding: 10px;
+}
+
+.opacity_zero{
+  opacity: 0;
+}
+
 .link{
   text-decoration: none;
 }
@@ -91,6 +105,10 @@ nav{
 }
 
 .first-screen{
+  background-image: url('./img/chess.jpg'); 
+  background-position: center center; 
+  background-size: cover; 
+  background-repeat: no-repeat;
   position: relative;
   color: var(--white);
   margin-top: 100px;
@@ -190,6 +208,10 @@ nav{
 }
 
 .work{
+  background-image: url('./img/stat.jpeg'); 
+  background-position: center center; 
+  background-size: cover; 
+  background-repeat: no-repeat;
   background-attachment: fixed;
   position: relative;
   color: var(--white);
@@ -212,6 +234,8 @@ nav{
 .portfolio{
   padding-top: 100px;
   position: relative;
+  padding-bottom: 90px;
+  overflow: hidden;
   img{
     width: 45%;
     height: 100%;
@@ -223,9 +247,12 @@ nav{
     font-size: 17px;
     font-weight: bolder;
   }
+  p{
+    margin-bottom: 0;
+  }
 }
 .calculator{
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 30px;
   position: relative;
   background-color: var(--brownGray);
@@ -238,6 +265,10 @@ nav{
 }
 
 .partners{
+  background-image: url('./img/building_front.jpeg'); 
+  background-position: center center; 
+  background-size: cover; 
+  background-repeat: no-repeat;
   background-attachment: fixed;
   position: relative;
   color: var(--white);
@@ -260,7 +291,6 @@ nav{
   overflow: hidden;
   form{
     background: var(--white);
-    padding: 10px;
     button{
       background: var(--secondYellow);
       color: var(--white);
@@ -272,17 +302,21 @@ nav{
 }
 
 .question{
+  background-image: url('./img/building_front.jpeg'); 
+  background-position: center center; 
+  background-size: cover; 
+  background-repeat: no-repeat;
   background-attachment: fixed;
   position: relative;
   color: var(--white);
-  padding: 100px 10px 90px;
+  padding: 100px 0 90px;
   overflow: hidden;
 }
 
 .clients{
   position: relative;
   color: var(--black);
-  padding: 100px 10px 90px;
+  padding: 100px 0 90px;
   overflow: hidden;
   .client_response{
     height: fit-content; 
@@ -298,7 +332,7 @@ nav{
 .contacts{
   position: relative;
   color: var(--black);
-  padding: 100px 10px 90px;
+  padding: 100px 0 90px;
   overflow: hidden;
   a{
     text-decoration: none;
@@ -308,7 +342,6 @@ nav{
   }
   form{
     background: var(--white);
-    padding: 10px;
   }
   button{
     background: var(--secondYellow);
@@ -321,7 +354,7 @@ nav{
 .more_question{
   position: relative;
   color: var(--white);
-  padding: 30px 10px 20px;
+  padding: 30px 0 20px;
   overflow: hidden;
   background: var(--blue);
   background: radial-gradient(circle, rgba(46,45,87,1) 0%, rgba(0,0,0,1) 100%);
@@ -395,6 +428,9 @@ footer{
     img{
       width: 100%;
       height: 100%;
+    }
+    .svg_img{
+      opacity: 0;
     }
   }
   footer{
