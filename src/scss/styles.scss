@@ -242,13 +242,6 @@ nav{
   img{
     width: 100%;
   }
-  button{
-    background: var(--secondYellow);
-    color: var(--white);
-    padding: 10px;
-    border: 0;
-    border-radius: 0;
-  }
   .subtext{
     max-width: 320px;
   }
@@ -269,7 +262,7 @@ nav{
       padding: 10px;
       border: 0;
       border-radius: 0;
-    } 
+    }
   }
 }
 
@@ -278,13 +271,6 @@ nav{
   color: var(--white);
   padding: 100px 10px 90px;
   overflow: hidden;
-  button{
-    background: var(--secondYellow);
-    color: var(--white);
-    padding: 10px;
-    border: 0;
-    border-radius: 0;
-  } 
 }
 
 .clients{
@@ -324,7 +310,7 @@ nav{
     padding: 10px;
     border: 0;
     border-radius: 0;
-  } 
+  }
 }
 .more_question{
   position: relative;
@@ -333,13 +319,6 @@ nav{
   overflow: hidden;
   background: var(--blue);
   background: radial-gradient(circle, rgba(46,45,87,1) 0%, rgba(0,0,0,1) 100%);
-  button{
-    background: var(--secondYellow);
-    color: var(--white);
-    padding: 10px;
-    border: 0;
-    border-radius: 0;
-  } 
 }
 
 footer{
