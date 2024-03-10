@@ -16,6 +16,9 @@
   --black: #000000;
   --blue: rgb(46,45,87);
 }
+.link{
+  text-decoration: none;
+}
 
 .font-literata{
   font-family: 'Literata', serif;
@@ -146,6 +149,10 @@ nav{
   }
 }
 
+.uppercase{
+  text-transform: uppercase;
+}
+
 #services{
   padding: 70px 0;
 }
@@ -172,6 +179,14 @@ nav{
 
 .gap-10{
   gap: 100px;
+}
+
+.numbers{
+  position: relative;
+  color: var(--black);
+  padding-top: 100px;
+  padding-bottom: 90px;
+  overflow: hidden;
 }
 
 .work{
@@ -267,6 +282,7 @@ nav{
 }
 
 .question{
+  background-attachment: fixed;
   position: relative;
   color: var(--white);
   padding: 100px 10px 90px;
@@ -334,6 +350,9 @@ footer{
   .logo{
     width: 280px;
     margin-bottom: 20px;
+  }
+  .link{
+    margin-bottom: 10px;
   }
   .services{
     display: flex;
