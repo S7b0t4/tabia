@@ -8,6 +8,13 @@
   font-family: "Roboto", sans-serif;
   --yellow: #F2C46E;
   --secondYellow: #cb935d;
+  --white: #fff;
+  --secondWhite: #f2f2f0;
+  --brownGray: #232323;
+  --gray: #1C2628;
+  --gold: #cb935d;
+  --black: #000000;
+  --blue: rgb(46,45,87);
 }
 
 .font-literata{
@@ -15,13 +22,13 @@
 }
 
 body{
-  background: #f2f2f0;
+  background: var(--secondWhite);
   font-family: 'Istok Web', sans-serif;
 }
 
 header{
-  background-color: #1C2628;
-  color: #fff;
+  background-color: var(--gray);
+  color: var(--white);
 
   img.logo{
     width: 140px;
@@ -29,7 +36,7 @@ header{
 }
 
 nav{
-  background-color: #232323;
+  background-color: var(--brownGray);
 
   a.nav-underline{
     display: block;
@@ -50,7 +57,7 @@ nav{
     bottom: -2px;
     width: 0;
     height: 2px;
-    background-color: #bdb098;
+    background-color: var(--gold);
     transition: width 0.5s;
   }
 
@@ -82,7 +89,7 @@ nav{
 
 .first-screen{
   position: relative;
-  color: #fff;
+  color: var(--white);
   margin-top: 100px;
   padding-top: 100px;
   padding-bottom: 90px;
@@ -120,9 +127,9 @@ nav{
 }
 
 .button-gold{
-  color: #fff;
+  color: var(--white);
   background-color: transparent;
-  border: 1px solid #cb935d;
+  border: 1px solid var(--gold);
   -webkit-transition: all 0.3s ease-out 0s, color 0s;
   transition: all 0.3s ease-out 0s, color 0s;
   margin-bottom: 4px;
@@ -134,7 +141,7 @@ nav{
   transition: all 0.3s ease-out 0s;
 
   &:hover{
-    background-color: #cb935d;
+    background-color: var(--gold);
     box-shadow: none;
   }
 }
@@ -143,7 +150,7 @@ nav{
   padding: 70px 0;
 }
 #action{
-  background: #1C2628;
+  background: var(--gray);
   padding: 20px;
 }
 
@@ -170,7 +177,7 @@ nav{
 .work{
   background-attachment: fixed;
   position: relative;
-  color: #fff;
+  color: var(--white);
   padding-top: 100px;
   padding-bottom: 90px;
   overflow: hidden;
@@ -191,7 +198,7 @@ nav{
   }
 }
 .svg_img{
-  fill: white;
+  fill: var(--white);
   filter: invert(100%);
   padding: 10px;
   max-width: 75px;
@@ -216,11 +223,11 @@ nav{
   padding-top: 100px;
   padding-bottom: 30px;
   position: relative;
-  background-color: #232323;
-  color: white;
+  background-color: var(--brownGray);
+  color: var(--white);
   button{
     background: var(--secondYellow);
-    color: white;
+    color: var(--white);
     padding: 10px;
   }
 }
@@ -228,13 +235,16 @@ nav{
 .partners{
   background-attachment: fixed;
   position: relative;
-  color: #fff;
+  color: var(--white);
   padding-top: 100px;
   padding-bottom: 90px;
   overflow: hidden;
+  img{
+    width: 100%;
+  }
   button{
     background: var(--secondYellow);
-    color: white;
+    color: var(--white);
     padding: 10px;
     border: 0;
     border-radius: 0;
@@ -246,16 +256,16 @@ nav{
 
 .question_and_answer{
   position: relative;
-  color: #000000;
+  color: var(--black);
   padding-top: 100px;
   padding-bottom: 90px;
   overflow: hidden;
   form{
-    background: white;
+    background: var(--white);
     padding: 10px;
     button{
       background: var(--secondYellow);
-      color: white;
+      color: var(--white);
       padding: 10px;
       border: 0;
       border-radius: 0;
@@ -265,12 +275,12 @@ nav{
 
 .question{
   position: relative;
-  color: #ffffff;
+  color: var(--white);
   padding: 100px 10px 90px;
   overflow: hidden;
   button{
     background: var(--secondYellow);
-    color: white;
+    color: var(--white);
     padding: 10px;
     border: 0;
     border-radius: 0;
@@ -279,7 +289,7 @@ nav{
 
 .clients{
   position: relative;
-  color: #000000;
+  color: var(--black);
   padding: 100px 10px 90px;
   overflow: hidden;
   .client_response{
@@ -295,7 +305,7 @@ nav{
 
 .contacts{
   position: relative;
-  color: #000000;
+  color: var(--black);
   padding: 100px 10px 90px;
   overflow: hidden;
   a{
@@ -305,12 +315,12 @@ nav{
     max-width: 100%;
   }
   form{
-    background: #f2f2f0;
+    background: var(--white);
     padding: 10px;
   }
   button{
     background: var(--secondYellow);
-    color: white;
+    color: var(--white);
     padding: 10px;
     border: 0;
     border-radius: 0;
@@ -318,14 +328,14 @@ nav{
 }
 .more_question{
   position: relative;
-  color: #f2f2f0;
+  color: var(--white);
   padding: 30px 10px 20px;
   overflow: hidden;
-  background: rgb(46,45,87);
+  background: var(--blue);
   background: radial-gradient(circle, rgba(46,45,87,1) 0%, rgba(0,0,0,1) 100%);
   button{
     background: var(--secondYellow);
-    color: white;
+    color: var(--white);
     padding: 10px;
     border: 0;
     border-radius: 0;
@@ -335,8 +345,8 @@ nav{
 footer{
   .footer{
     border-top: 2px solid var(--yellow);
-    background: #1C2628;
-    color: rgb(192, 192, 192);
+    background: var(--gray);
+    color: var(--white);
     padding: 20px;
   }
   a{
