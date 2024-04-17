@@ -106,25 +106,16 @@ nav{
 }
 
 .first-screen{
+  background-image: url('./assets/chess.jpg'); 
+  background-position: center center; 
+  background-size: cover; 
+  background-repeat: no-repeat;
   position: relative;
   color: var(--white);
   margin-top: 100px;
   padding-top: 100px;
   padding-bottom: 90px;
   overflow: hidden;
-  
-  img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .main-info {
-    position: relative;
-    z-index: 1;
-}
 
   picture{
     z-index: -1;
@@ -218,7 +209,7 @@ nav{
 }
 
 .work{
-  background-image: url('./img/stat.jpeg'); 
+  background-image: url('./assets/stat.jpeg'); 
   background-position: center center; 
   background-size: cover; 
   background-repeat: no-repeat;
@@ -275,7 +266,7 @@ nav{
 }
 
 .partners{
-  background-image: url('./img/building_front.jpeg'); 
+  background-image: url('./assets/building_front.jpeg'); 
   background-position: center center; 
   background-size: cover; 
   background-repeat: no-repeat;
@@ -312,7 +303,7 @@ nav{
 }
 
 .question{
-  background-image: url('./img/building_front.jpeg'); 
+  background-image: url('./assets/building_front.jpeg'); 
   background-position: center center; 
   background-size: cover; 
   background-repeat: no-repeat;
