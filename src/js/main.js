@@ -1,9 +1,3 @@
 import '../scss/styles.scss';
-import * as bootstrap from 'bootstrap';
+import 'bootstrap'; // Подключаем Bootstrap JavaScript
 import simpleParallax from 'simple-parallax-js';
-
-import Alert from 'bootstrap/js/dist/alert';
-import { Tooltip, Toast, Popover } from 'bootstrap';
-
-var image = document.getElementsByClassName('thumbnail');
-new simpleParallax(image);
