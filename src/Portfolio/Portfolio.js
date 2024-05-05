@@ -1,7 +1,7 @@
 import React from 'react';
 
 import realEstate from "../Upload/real-estate.jpeg"
-import restoran from "../Upload/restoran.jpeg"
+import schedule from "../Upload/Schedule.png"
 import Tabia from "../Upload/Tabia.png"
 
 import Avatar from "../Upload/avatar.svg"
@@ -89,7 +89,7 @@ const Portfolio = () => {
       {
         "title": "Парсер расписания и клиент для расписания",
         "description": "Разработка веб-приложения для удобного просмотра расписания занятий. Возможность сбора и обновления данных о занятиях с использованием парсера.",
-        "imageUrl": restoran,
+        "imageUrl": schedule,
         "projectLinkGit": "https://github.com/S7b0t4/schedule_backend",
         "projectLink": "https://schedule.s7b0t4-website-server.ru/"
       },
