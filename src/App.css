@@ -1,3 +1,6 @@
+body{
+  background: white;
+}
 .project-card{
   background: rgb(220, 220, 220);
   position: relative;
