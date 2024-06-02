@@ -1,8 +1,8 @@
 import React from 'react';
 
 import realEstate from "../Upload/real_estate.png"
-import schedule from "../Upload/schedule.png"
-import tabia from "../Upload/tabia.png"
+import schedule from "../Upload/Schedule.png"
+import tabia from "../Upload/Tabia.png"
 
 import Avatar from "../Upload/avatar.svg"
 
@@ -14,8 +14,12 @@ import 'animate.css';
 
 
 const DeveloperInfo = () => {
+  const prefersDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+  const theme = prefersDarkMode ? 'dark' : 'light';
+
   return (
-    <div className="developer_info">
+    <div className={`developer_info ${theme}`}>
       <div className='border'>
         <div className='avatar_block animate__backInDown'>
           <img src={Avatar} alt="Avatar" className='avatar'/>
@@ -58,6 +62,9 @@ const DeveloperInfo = () => {
 };
 
 const Portfolio = () => {
+  const prefersDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+  const theme = prefersDarkMode ? 'dark' : 'light';
 		const projects = [
       {
         "title": "Магазин недвижимости",
@@ -104,7 +111,7 @@ const Portfolio = () => {
 	
 
   return (
-    <div className="portfolio">
+    <div className={`portfolio ${theme}`}>
       <DeveloperInfo />
       <h1 className="portfolio_title">Работы</h1>
       <div className="portfolio_row">

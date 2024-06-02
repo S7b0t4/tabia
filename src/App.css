@@ -1,6 +1,3 @@
-body{
-  background: white;
-}
 .project-card{
   background: rgb(220, 220, 220);
   position: relative;
@@ -45,7 +42,6 @@ body{
   animation-duration: 1s;
   position: relative;
   top: 75px;
-  background: rgb(255, 255, 255);
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -53,6 +49,7 @@ body{
   justify-content: center;
 }
 .text_info{
+  padding: 4px;
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -68,6 +65,16 @@ body{
   padding-bottom: 10px;
   gap: 10px;
 }
+.light{
+  color: #000000;
+  background: white;
+}
+
+.dark{
+  color: #ffffff;
+  background: rgb(23, 30, 38);
+}
+
 .project-image {
   position: static;
   width: 100%;
