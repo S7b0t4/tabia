@@ -74,6 +74,15 @@
   color: #ffffff;
   background: rgb(23, 30, 38);
 }
+.project-description.light{
+  color: #666;
+}
+.project-description.dark{
+  color: white;
+}
+.project-card.dark{
+  background: rgb(16, 22, 30);
+}
 
 .project-image {
   position: static;
@@ -95,10 +104,6 @@
   margin-bottom: 10px;
 }
 
-.project-description {
-  color: #666;
-}
-
 .link_row{
   display: flex;
   gap: 15px;
@@ -108,9 +113,7 @@
   margin-top: auto;
   display: inline-block;
   padding: 8px 12px;
-  background-color: #3498db;
-  color: #fff;
-  text-decoration: none;
+  color: #657eee;
   border-radius: 5px;
   transition: background-color 0.3s ease;
 }
@@ -126,7 +129,7 @@
 }
 
 .project-link:hover {
-  background-color: #2980b9;
+  background-color: white;
 }
 
 @media screen and (max-width: 768px) {
